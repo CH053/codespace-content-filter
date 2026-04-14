@@ -14,7 +14,7 @@
   "contributes": {
     "commands": [{
       "command": "1568741230.helloWorld",
-      "title": "Hello World"
+      "title": "בסייעתא דשמיא"
     }]
   },
   "scripts": {
