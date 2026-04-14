@@ -4,18 +4,26 @@
   "description": "הגנה נטפרי בהצגת תמונות בVS Code",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.115.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCustomEditor:1568741230.imageViewer"
+  ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "1568741230.helloWorld",
-      "title": "בסייעתא דשמיא"
-    }]
+    "customEditors": [
+      {
+        "viewType": "1568741230.imageViewer",
+        "displayName": "מציג תמונות מוגן נטפרי",
+        "selector": [
+          { "filenamePattern": "*.{png,jpg,jpeg,gif,webp,bmp,svg}" }
+        ],
+        "priority": "default"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
