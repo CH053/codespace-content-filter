@@ -1,10 +1,15 @@
 {
   "name": "1568741230",
   "displayName": "הגנת נטפרי תמונות",
+  "publisher": "netfree-user",
   "description": "הגנה נטפרי בהצגת תמונות בVS Code",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CH053/1568741230.git"
   },
   "categories": [
     "Other"
@@ -31,7 +36,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.115.0",
+    "@types/vscode": "^1.80.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "eslint": "^9.39.3",
