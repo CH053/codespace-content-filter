@@ -1,7 +1,7 @@
 import globals from "globals";
 
 export default [{
-    files: ["**/*.js"],
+    files: ["extension.js", "test/**/*.js"],
     languageOptions: {
         globals: {
             ...globals.commonjs,

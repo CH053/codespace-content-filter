@@ -1,46 +1,26 @@
 {
-  "name": "1568741230",
-  "displayName": "הגנת נטפרי תמונות",
-  "publisher": "netfree-user",
-  "description": "הגנה נטפרי בהצגת תמונות בVS Code",
-  "version": "0.0.1",
+  "name": "codespace-content-filter",
+  "displayName": "Codespace Content Filter",
+  "version": "1.0.0",
+  "publisher": "חבר טוב",
   "engines": {
     "vscode": "^1.80.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CH053/1568741230.git"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCustomEditor:1568741230.imageViewer"
+    "onStartupFinished"
   ],
-  "main": "./extension.js",
-  "contributes": {
-    "customEditors": [
-      {
-        "viewType": "1568741230.imageViewer",
-        "displayName": "מציג תמונות מוגן נטפרי",
-        "selector": [
-          { "filenamePattern": "*.{png,jpg,jpeg,gif,webp,bmp,svg}" }
-        ],
-        "priority": "default"
-      }
-    ]
-  },
+  "main": "./out/extension.js",
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
+    "@types/node": "18.x",
     "@types/vscode": "^1.80.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "eslint": "^9.39.3",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "typescript": "^5.1.3"
   }
 }
