@@ -2,7 +2,7 @@
   "name": "codespace-content-filter",
   "displayName": "Codespace Content Filter",
   "version": "1.0.0",
-  "publisher": "חבר טוב",
+  "publisher": "donor",
   "engines": {
     "vscode": "^1.80.0"
   },
